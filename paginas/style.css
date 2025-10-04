@@ -1,0 +1,76 @@
+/* Reset básico */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
+    color: #f0f0f0;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Link voltar */
+a {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #00d4ff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00ffaa;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00ffaa;
+}
+
+/* Imagem */
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,255,170,0.6);
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Caixa com borda para o conteúdo */
+body > h2, 
+body > img, 
+body > p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
